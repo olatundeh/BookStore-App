@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import backgroundImage from "../../public/home/book-bg.png";
 
 export default function Home() {
@@ -14,6 +15,18 @@ export default function Home() {
           objectFit: "cover"
         }}
       />
+      <div className="flex flex-col justify-center items-center bg-purple-100 rounded-md p-2 lg:w-2/5 h-1/4 z-10">
+        <div className="flex pb-5 mb-5 text-5xl text-purple-800">
+          <p>BookStore</p>
+        </div>
+        <div>
+          <Link 
+            className="bg-purple-700 text-white rounded-sm p-2"
+            href="/store">
+            Take a look at our store
+          </Link>
+        </div>
+      </div>
     </div>
   );  
 }
