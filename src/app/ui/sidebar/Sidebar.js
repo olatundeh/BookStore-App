@@ -14,9 +14,11 @@ const Sidebar = () => {
             <div className='flex flex-wrap gap-2 justify-center md:grow flex-row md:justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2'>
                 <NavLinks />
                 <form>
-                    <button className='flex h-[48px] grow items-center justify-center gap-2 rounded-md'> <ArrowLeftOnRectangleIcon className='w-6'/></button>
+                    <button className='flex h-[48px] grow items-center justify-center gap-2 rounded-md'> 
+                        <ArrowLeftOnRectangleIcon className='w-6'/>
+                    </button>
                 </form>
-            </div>
+            </div>  
         </div>
     );
 }
